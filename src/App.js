@@ -1,7 +1,8 @@
-// src/App.js
 import React from 'react';
 import './App.css';
-import Counter from './components/Counter'; // Importa el nuevo componente
+import Counter from './components/Counter';
+import AddItem from './components/AddItem';
+import ItemList from './components/ItemList';
 
 function App() {
   const elemento1 = <h1>Hello JSX!</h1>;
@@ -21,7 +22,7 @@ function App() {
   const elemento3 = (
     <div>
       <h1>Hello World</h1>
-      <p>Lets render this to the DOM</p>
+      <p>Let's render this to the DOM</p>
     </div>
   );
 
@@ -30,7 +31,9 @@ function App() {
       {elemento1}
       {elemento2}
       {elemento3}
-      <Counter /> {/* Añade el componente Counter */}
+      <Counter />
+      <AddItem />
+      <ItemList />
     </div>
   );
 }
