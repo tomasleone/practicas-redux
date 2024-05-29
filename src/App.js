@@ -3,6 +3,8 @@ import './App.css';
 import Counter from './components/Counter';
 import AddItem from './components/AddItem';
 import ItemList from './components/ItemList';
+import AddTask from './components/AddTask';
+import TaskList from './components/TaskList';
 
 function App() {
   const elemento1 = <h1>Hello JSX!</h1>;
@@ -34,9 +36,13 @@ function App() {
       <Counter />
       <AddItem />
       <ItemList />
+      <h2>Todo List</h2>
+      <AddTask />
+      <TaskList />
     </div>
   );
 }
 
 export default App;
+
 
